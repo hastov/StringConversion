@@ -25,7 +25,7 @@ public struct StringConversion {
     public init() {
     }
     
-    static func can(_ initial: String, beConvertedInto target: String) -> Bool {
+    public func can(_ initial: String, beConvertedInto target: String) -> Bool {
         var beforeTransformations = target
         while (beforeTransformations.count > initial.count &&
                beforeTransformations != initial) {
